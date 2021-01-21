@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS document */
+
+#wrapper{
+    width: 30rem;
+}
+
+#eka{
+    width: 20rem;
+    height: 10rem;
+    position: absolute;
+    left: 77px;
+    top: -80px;
+    z-index: -2;
+    background-color: #A0D8EF;
+    opacity: 60%;
+    animation-name: sininen;
+    animation-duration: 4s;
+}
+
+#toka{
+    width: 6rem;
+    height: 10rem;
+    position: absolute;
+    z-index: -1;
+    left: 130px;
+    top: 20px;
+    background-color: #DBECB5;
+    opacity: 70%;
+    visibility: hidden;
+    animation-name: vihrea;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#kolmas{
+    border: solid orange 10px;
+    border-radius: 10px;
+    width: 28rem;
+    height: 10rem;
+    z-index: 0;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#kappale1{
+    font-family: monospace;
+    font-size: 1.3rem;
+    letter-spacing: 0.3cm;
+}
+
+#kappale2{
+   font-family: serif;
+   font-size: 1rem;
+   letter-spacing: 0.3cm;
+   color: #A0D8EF;
+
+}
+
+.magenta{
+    background-color:#B700A1;
+    color: white;
+}
+
+figure, p{
+    padding: 10px;
+    text-align: left;
+    margin-left: 55px;
+}
+
+/* The animation code */
+@keyframes sininen {
+    from {top: -200px;}
+    to {top: -80px;}
+}
+
+@keyframes vihrea{
+    from {left: -200px;}
+    to {left: 130px; visibility: visible;}
+}
